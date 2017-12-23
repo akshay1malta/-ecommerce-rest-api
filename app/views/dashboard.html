@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script>
+			function show(shown, hidden) {
+  				document.getElementById(shown).style.display='block';
+  				document.getElementById(hidden).style.display='none';
+  				return false;
+			}
+		</script>
+    <style>
+
+
+      body {
+          background-color: #f6b8b8;
+      }
+
+      .grid {
+          width: 700px;
+          height: 600px;
+          margin: 0 auto;
+          background-color: #fff;
+          padding: 10px 50px 50px 50px;
+
+      }
+
+      .grid h1 {
+          font-family: "sans-serif";
+          background-color: #000000;
+          text-align: center;
+          color: #ffffff;
+          padding: 2px 0px;
+      }
+
+      #score {
+          color: #5A6772;
+          text-align: center;
+          font-size: 30px;
+      }
+
+      .grid #question {
+          font-family: "sans-serif";
+          color: #000000;
+      }
+
+      .buttons {
+          margin-top: 30px;
+      }
+
+      #btn0, #btn1, #btn2, #btn3, #btn5, #btn6, #btn7 {
+          background-color: #000000;
+          width: 250px;
+          color: #ffffff;
+          border: 1px solid #1D3C6A;
+          margin: 10px 40px 10px 0px;
+          padding: 10px 10px;
+      }
+
+      #status{
+          
+      }
+
+      #btn0:hover, #btn1:hover, #btn2:hover, #btn3:hover {
+          cursor: pointer;
+          background-color: #57636e;
+      }
+
+      #btn0:focus, #btn1:focus, #btn2:focus, #btn3:focus {
+          outline: 0;
+      }
+      #progress {
+          color: #2b2b2b;
+          font-size: 18px;
+      }
+
+      .navbar {
+          overflow: hidden;
+          background-color: #333;
+          font-family: Arial;
+      }
+
+      .navbar a {
+          float: left;
+          font-size: 16px;
+          color: white;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+      }
+
+      .dropdown {
+          float: left;
+          overflow: hidden;
+      }
+
+      .dropdown .dropbtn {
+          font-size: 16px;    
+          border: none;
+          outline: none;
+          color: white;
+          padding: 14px 16px;
+          background-color: inherit;
+      }
+
+      .navbar a:hover, .dropdown:hover .dropbtn {
+          background-color: red;
+      }
+
+      .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: #f9f9f9;
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          z-index: 1;
+      }
+
+      .dropdown-content a {
+          float: none;
+          color: black;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+          text-align: left;
+      }
+
+      .dropdown-content a:hover {
+          background-color: #ddd;
+      }
+
+      .dropdown:hover .dropdown-content {
+          display: block;
+      }
+    </style>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+	<body>
+		<div id="Page1">
+			<div class="navbar">
+			    <a href="#home">Home</a>
+				<a href="#news">News</a>
+			    <div class="dropdown">
+			    	<button class="dropbtn">Dropdown 
+			     		<i class="fa fa-caret-down"></i>
+			    	</button>
+			    	<div class="dropdown-content">
+			      		<a href="#" onclick="return show('Page2','Page1');">Test 1</a>
+			      		<a href="#" onclick="return show('Page3','Page1');">Test 2</a>
+			      		<a href="#" onclick="return show('Page4','Page1');">Test 3</a>
+			    	</div>
+			 	 </div> 
+			</div>
+		</div>
+ 
+    	<div id="Page2" style="display:none">
+    		<h1>TEST 1</h1>
+    		<h3> INSTRUCTIONS</h3>
+    		<p>1. there are 5 questions with 4 options</p>
+    		<p>2. choose one option </p>
+    		<p>3. 1 mark for every correct answer </p>
+    		<p>4. u have 20 seconds to answer all questions</p>
+    		<p>5. timer will start once you click on start button</p>
+    		<button id="btn5" type="button" onclick="alert('hello world')">START</button>
+  		</div>
+  		<div id="Page3" style="display:none">
+    		<h1>TEST 2</h1>
+    		<h3> INSTRUCTIONS</h3>
+    		<p>1. there are 5 questions with 4 options</p>
+    		<p>2. choose one option </p>
+    		<p>3. 1 mark for every correct answer </p>
+    		<p>4. u have 20 seconds to answer all questions</p>
+    		<p>5. timer will start once you click on start button</p>
+    		<button id="btn6" type="button" onclick="alert('hello world')">START</button>
+  		</div>
+  		<div id="Page4" style="display:none">
+    		<h1>TEST 3</h1>
+    		<h3> INSTRUCTIONS</h3>
+    		<p>1. there are 5 questions with 4 options</p>
+    		<p>2. choose one option </p>
+    		<p>3. 1 mark for every correct answer </p>
+    		<p>4. u have 20 seconds to answer all questions</p>
+    		<p>5. timer will start once you click on start button</p>
+    		<button id="btn7" type="button" onclick="alert('hello world')">START</button>
+  		</div>
+
+	</body>
+</html>

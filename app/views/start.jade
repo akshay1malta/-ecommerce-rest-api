@@ -1,0 +1,28 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+    title home page
+    style.
+      h1{"center(color ='blue'}
+    
+    
+  body
+    section.container
+      h1 ECOMMERCE
+      p.button 
+        input(type="button", onclick="window.open('http://localhost:3000/users/login/screen','_blank')", value='login')
+        input(type="button", onclick="window.open('http://localhost:3000/users/signup/screen','_blank')", value='signup')
+        input(type="button", onclick="window.open('http://localhost:3000/users/login/fbc','_blank')", value='facebook')
+      p(style='white-space:pre;')
+        |#{'\n'}   For Men: #[span.A]
+        |#{'\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t'}   For Women: #[span.B]
+      p
+        img(src="https://i.pinimg.com/736x/3c/58/b1/3c58b1e280a5d8771df4e9688faf5128--fashion-looks-fashion-men.jpg",alt='men',align='left',width='500',height='600',onclick="window.open('http://localhost:3000/users/men','_blank')")
+        img(src="http://avetamme.com/wp-content/uploads/DSC_2925Sven-Tupits-Fotogeen.jpg",alt='women',align='right',width='500',height='600',onclick="window.open('http://localhost:3000/users/women','_blank')")
+
+
+
+
+      
